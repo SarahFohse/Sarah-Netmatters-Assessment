@@ -700,7 +700,7 @@ hr {
     visibility: hidden;
     position: absolute;
     z-index: 1;
-    width: 250px;
+    width: 300px;
     bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
@@ -716,22 +716,25 @@ hr {
   .tooltip a {
     margin-left: 70px;
   }
-  .tooltiptext p{
+  .tooltiptext p {
     height: auto;
     text-wrap: wrap;
   }
-  .tooltiptext a{
+  .tooltiptext a {
     text-decoration: none;
     color: #fff;
     margin: auto;
-    margin-left: -10px;
     text-transform: uppercase;
     padding: 10px;
-    background-color: #99cbe7;
+    filter: none;
+    background-color: #67809f;
   }
-  .tooltiptext a::before {
-    
-    
+  .tooltiptext a:hover {
+    background-color: #566c88;
+  }
+  .tooltiptext i {
+    margin-left: 5px;
+    margin-top: 5px;
   }
   .tooltip-description {
     font-size: .8em;
