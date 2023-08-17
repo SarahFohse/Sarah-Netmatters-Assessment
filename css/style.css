@@ -411,7 +411,7 @@ button .fa-circle-dot{
  }
 .work-showcase {
     white-space: nowrap;
-    overflow-x: hidden;
+    overflow: visible;
     margin-right: -20px;
 
 }
