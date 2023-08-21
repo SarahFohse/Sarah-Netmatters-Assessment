@@ -98,8 +98,26 @@ button .fa-phone-volume:hover {
 
 
 .desktop-nav {
-    display: none;
+background-color: #333645;
+}
+.main-nav {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+margin: 0 auto;
+padding: 20px 120px
+}
+.desktop-nav i {
+    font-size: 2em;
+    padding: 30px;
+}
+.desktop-nav a {
+    color: #fff;
+    text-decoration: none;
+    vertical-align: auto;
+}
 
+.hidden-nav {
+    display: none;
 }
 
 /* put in media query
