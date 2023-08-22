@@ -100,7 +100,7 @@ button .fa-phone-volume:hover {
 
 
 .desktop-nav {
-	/* display: none; */
+	display: none;
 	background-color: #333645;
 }
 .main-nav {
@@ -277,53 +277,41 @@ button .fa-phone-volume:hover {
 
 .hidden-nav {
 	flex-wrap: wrap;
+	padding-bottom: 50px;
 }
 
 .hidden-nav a {
 	display: flex;
+	margin: 20px 0;
+	margin-left: -30px;
 }
 
 .hidden-nav i {
 	padding: 0;
+	margin-top: 5px;
+	margin-right: 10px;
+	font-size: 1em;
 }
 .hidden-nav .h2 {
 	width: 100%;
 	display: block;
 	font-size: 2em;
-	margin-top: 35px;
+	margin-top: 40px;
+	margin-bottom: 10px;
 	color: #fff;
+	margin-left: -30px;
 }
 
 .hidden-nav span {
 	margin-left: 10px;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	max-width: 75%;
 }
 
 .hidden-nav li {
 	width: 33%;
 }
-
-/* put in media query
- .desktop-nav {
-    height: 100px;
-    background-color: #323544;
-    
-    
- }
- .desktop-nav ul {
-    display: flex;
-    width: 1000px;
-    margin: auto;
-    list-style: none;
- }
- .desktop-nav a {
-    text-decoration: none;
-    color: #fff;
- }
-.desktop-nav i {
-    font-size: 1.5em;
-    padding: 20px 40px 15px 40px;
-} */
-
 
 
 
@@ -331,7 +319,7 @@ button .fa-phone-volume:hover {
 
  .message {
     position: fixed;
-    right: 6%;
+    right: 1%;
     bottom: 3%;
     z-index: 2;
  }
@@ -1296,12 +1284,6 @@ h5 {
         grid-template-columns: 1fr 1fr;
         gap: 30px;
     }
-    /* .article-1 {
-        height: 600px;
-    }
-    .article-2 {
-        height: 580px;
-    } */
     .article-3 {
         display: none;
     }
@@ -1335,5 +1317,27 @@ h5 {
 	.main-nav > li a::after {
 		border-right-width: 67px;
 		border-left-width: 67px;
+	}
+	.desktop-nav {
+		display: block;
+	}
+}
+@media screen and (min-width: 1260px) {
+	.container {
+		width: 1210px;
+	}
+	.work-showcase a:nth-child(-n+12) {
+			display: inline-flex;
+	}
+
+	.main-nav > li a::after {
+		border-right-width: 84px;
+		border-left-width: 84px;
+	}
+	.hidden-nav .h2 {
+		margin-left: -10px;
+	}
+	.hidden-nav a {
+		margin-left: -10px;
 	}
 }
