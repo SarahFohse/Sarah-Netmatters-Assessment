@@ -14,8 +14,8 @@ body{
     color: #333645;
  }
  .container {
-		margin-left: auto;
-		margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 1em;
     padding-right: 1em;
     overflow-x: hidden;
@@ -28,8 +28,8 @@ body{
  }
 
 .header-buttons {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
 }
@@ -1219,6 +1219,39 @@ h5 {
 }
 
 
+/* Hello */
+
+.header {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content {
+    width: 370px;
+}
+
+.header img {
+    width: 100%;
+}
+
+.search-bar {
+    max-width: 66px;
+    margin-top: 0;
+    margin-right: 0 !important;
+    height: 57px !important;
+}
+
+.header-buttons {
+    width: 500px;
+    justify-content: space-between;
+}
+
+
+
+/* Goodbye */
+
 @media screen and (min-width: 462px) {
     .footer-icon a {
         padding: 15px 20px;
@@ -1246,17 +1279,7 @@ h5 {
     .fa-bars {
       margin-right: 2%;
     }
-    .search-bar {
-      
-      position: absolute;
-      overflow: visible;
-      width: 145px;
-      height: 60px;
-      top: 15px;
-      right: 200px;
-      border: none;
-      margin-right: 5%;
-    }
+   
     .search-bar button {
     background-color: #999AA2;
     color: #fff;
