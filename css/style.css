@@ -23,6 +23,21 @@ body{
  .header {
     margin: 32px 0 1em 0;
  }
+ .header-content {
+  display: flex;
+ }
+
+.header-buttons {
+  display: flex;
+  flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+
+
  .header img {
     width: 70%;
     
@@ -34,9 +49,6 @@ body{
     background-color: #fff;
  }
  button .fa-bars {
-    position: absolute;
-    top: 25px;
-    right: 15px;
     color: #fff;
     background-color: #333645;
     padding: 15px 20px;
@@ -49,9 +61,6 @@ body{
     background-color: #22242e;
  }
  button .fa-phone-volume {
-    position: absolute;
-    top: 45px;
-    right: 110px;
     font-size: 2em;
     cursor: pointer;
  }
@@ -65,13 +74,9 @@ button .fa-phone-volume:hover {
   padding-right: 5px;
  }
 .icon-disabled a:nth-child(1) {
-  position: absolute;
-  top: -25px;
-  right: 355px;
   color: #fff;
   background-color: #4183d7;
   padding: 15px 20px;
-  margin: 50px;
   font-size: 1.2em;
   border: none;
   border-radius: 5%;
@@ -79,13 +84,9 @@ button .fa-phone-volume:hover {
   text-decoration: none;
 }
 .icon-disabled a:nth-child(2) {
-  position: absolute;
-  top: -25px;
-  right: 190px;
   color: #fff;
   background-color: #999aa2;
   padding: 15px 20px;
-  margin: 50px;
   font-size: 1.2em;
   border: none;
   border-radius: 5%;
@@ -180,7 +181,9 @@ button .fa-phone-volume:hover {
 	list-style: none;
 }
 
-
+main {
+  overflow: hidden;
+}
 .main-nav > li > a {
 	position: relative;
 	display: block;
@@ -434,7 +437,11 @@ button .fa-phone-volume:hover {
     background-color: #7a549c; 
 }
 
-
+.slider-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .slider-btn button{
     background: none;
     border: none;
@@ -650,7 +657,6 @@ button .fa-circle-dot{
 }
 .work-showcase {
     white-space: nowrap;
-    overflow: visible;
     display: flex;
     align-items: center;
     margin-top: 50px;
@@ -809,6 +815,7 @@ button .fa-circle-dot{
     margin: 40px 0;
     position: relative;
     border-radius: 3px;
+    transition: .5s ease;;
 }
 .article-container {
     margin: 25px;
@@ -822,7 +829,7 @@ button .fa-circle-dot{
 .article-1:hover,
 .article-2:hover,
 .article-3:hover {
-  margin-top: -10px;
+  top: -10px;
   transition: .5s ease;
 }
 .tag-container {
@@ -1354,9 +1361,6 @@ h5 {
   .searchBox {
     display: none;
   }
-  .search-bar {
-    right: 10px;
-  }
   .icon-disabled {
     display: inline;
   }
@@ -1400,10 +1404,12 @@ h5 {
       'tabfour tabfour tabfour tabfive tabfive tabfive'
       'tabsix tabsix tabsix tabseven tabseven tabseven';
   }
+  .container-2 {
+    display: flex;
+    justify-content: space-between;
+  }
   .welcome-container {
-    display: inline-block;
-    width: 48%;
-    margin-top: -40px;
+    width: 45%;
   }
   .name,
   .email {
