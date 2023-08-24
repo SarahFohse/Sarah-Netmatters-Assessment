@@ -4,6 +4,7 @@
 
 html {
     font-size: 16px;
+    overflow-x: hidden;
 }
 body{
     margin: 0;
@@ -22,9 +23,15 @@ body{
  }
  .header {
     margin: 32px 0 1em 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
  }
  .header-content {
   display: flex;
+  align-items: center;
+  width: 370px;
  }
 
 .header-buttons {
@@ -32,35 +39,37 @@ body{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    width: 510px;
+    gap: 15px;
 }
 
-
-
-
-
- .header img {
-    width: 70%;
+.header img {
+    width: 100%;
     
-    max-width: 345px;
- }
+    min-width: 214px;
+    max-width: 370px;
+}
+
  .header button {
-    
     border: none;
     background-color: #fff;
  }
  button .fa-bars {
     color: #fff;
     background-color: #333645;
-    padding: 15px 20px;
+    padding: 13px 20px;
     font-size: 2.2em;
     border: none;
     border-radius: 5%;
     cursor: pointer;
  }
  button .fa-bars:hover {
+  
     background-color: #22242e;
  }
  button .fa-phone-volume {
+  
+  margin-right: 15px;
     font-size: 2em;
     cursor: pointer;
  }
@@ -82,6 +91,10 @@ button .fa-phone-volume:hover {
   border-radius: 5%;
   cursor: pointer;
   text-decoration: none;
+  margin-right: 15px;
+}
+.icon-disabled a:nth-child(1):hover {
+  background-color: #2a6ec6;
 }
 .icon-disabled a:nth-child(2) {
   color: #fff;
@@ -93,26 +106,29 @@ button .fa-phone-volume:hover {
   cursor: pointer;
   text-decoration: none;
 }
+.icon-disabled a:nth-child(2):hover {
+  background-color: #84858f;
+}
 
  .search-bar {
-    display: inline-flex;
-    flex: 1 1 300px;
+    display: flex;
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 45px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
-    border-right: none;
+    max-width: 66px;
+    margin-top: 0;
+    margin-right: 0 !important;
+    height: 57px !important;
   }
  .search-bar button {
     background-color: #e9e9e9;
-    border: 1px solid #ccc;
-    border-left: none;
-    border-right: 2px solid #ccc;
+    border: none;
     cursor: pointer;
     
   border-radius: 5%;
+ }
+ .search-bar button:hover {
+  background-color: #84858f;
  }
  button .fa-magnifying-glass {
     font-size: 1.5em;
@@ -128,19 +144,21 @@ button .fa-phone-volume:hover {
 	background-color: #e9e9e9;
 	font-size: .9em;
 	font-weight: 500;
+  border: 1px solid #ccc;
+  border-right: none;
  }
 
  .search-mobile{
-    display: inline-flex;
-    flex: 1 1 300px;
+    display: flex;
     position: relative;
     overflow: hidden;
-    width: 100%;
+    width: 90%;
     height: 45px;
     margin-bottom: 20px;
-    /* border: 1px solid #ccc; */
+    border: 1px solid #ccc;
     border-right: none;
-    margin-right: 18px;
+    margin-right: auto;
+    margin-left: auto;
   }
  .search-mobile button {
     background-color: #e9e9e9;
@@ -349,12 +367,17 @@ main {
 .hidden-nav {
 	flex-wrap: wrap;
 	padding-bottom: 50px;
+  padding-right: 60px;
+  padding-left: 100px;
 }
 
 .hidden-nav a {
 	display: flex;
 	margin: 20px 0;
 	margin-left: -30px;
+}
+.hidden-nav a:hover span {
+  text-decoration: underline;
 }
 
 .hidden-nav i {
@@ -590,6 +613,8 @@ button .fa-circle-dot{
     padding: 20px 20px;
     box-shadow: 0px 0px 20px #e2e2e2;
     position: relative;
+    
+    transition: .5s ease;
 }
 .tab-container > div:hover h3,
 .tab-container > div:hover p {
@@ -603,7 +628,7 @@ button .fa-circle-dot{
 
 .tab-1:hover {
     background-color: #67809F;
-    margin-top: -10px;
+    top: -10px;
     transition: .5s ease;
 }
 .tab-1:hover .icon,
@@ -612,7 +637,7 @@ button .fa-circle-dot{
 }
 .tab-2:hover {
   background-color: #4183D7;
-  margin-top: -10px;
+  top: -10px;
   transition: .5s ease;
 }
 .tab-2:hover .icon,
@@ -621,7 +646,7 @@ button .fa-circle-dot{
 }
 .tab-3:hover {
   background-color: #2ECC71;
-  margin-top: -10px;
+  top: -10px;
   transition: .5s ease;
 }
 .tab-3:hover .icon,
@@ -630,7 +655,7 @@ button .fa-circle-dot{
 }
 .tab-4:hover {
   background-color: #D64541;
-  margin-top: -10px;
+  top: -10px;
   transition: .5s ease;
 }
 .tab-4:hover .icon,
@@ -639,7 +664,7 @@ button .fa-circle-dot{
 }
 .tab-5:hover {
   background-color: #926FB1;
-  margin-top: -10px;
+  top: -10px;
   transition: .5s ease;
 }
 .tab-5:hover .icon,
@@ -648,7 +673,7 @@ button .fa-circle-dot{
 }
 .tab-6:hover {
   background-color: #F62459;
-  margin-top: -10px;
+  top: -10px;
   transition: .5s ease;
 }
 .tab-6:hover .icon,
@@ -657,7 +682,7 @@ button .fa-circle-dot{
 }
 .tab-7:hover {
   background-color: #CE4125;
-  margin-top: -10px;
+  top: -10px;
   transition: .5s ease;
 }
 .tab-7:hover .icon,
@@ -690,6 +715,9 @@ button .fa-circle-dot{
     right: 20px;
     top: 10px;
     visibility: hidden;
+}
+.view-hidden:hover {
+  text-decoration: underline;
 }
 .work-showcase {
     white-space: nowrap;
@@ -851,7 +879,7 @@ button .fa-circle-dot{
     margin: 40px 0;
     position: relative;
     border-radius: 3px;
-    transition: .5s ease;;
+    transition: .5s ease;
 }
 .article-container {
     margin: 25px;
@@ -976,6 +1004,9 @@ hr {
     right: 20px;
     top: 10px;
     visibility: hidden;
+}
+.view-all-hidden:hover {
+  text-decoration: underline;
 }
 .view-work-all {
     font-size: 1.6em;
@@ -1173,9 +1204,9 @@ footer {
 }
 
 footer img {
-    width: 70%;
+    min-width: 250px;
     max-width: 320px;
-    margin: 25px 0 5px 0;
+    margin: 25px 30 5px 0;
 
 }
 .footer-text {
@@ -1254,32 +1285,7 @@ h5 {
     line-height: 1.5em;
 }
 
-.header {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-}
 
-.header-content {
-    width: 370px;
-}
-
-.header img {
-    width: 100%;
-}
-
-.search-bar {
-    max-width: 66px;
-    margin-top: 0;
-    margin-right: 0 !important;
-    height: 57px !important;
-}
-
-.header-buttons {
-    width: 500px;
-    justify-content: space-between;
-}
 
 
 @media screen and (min-width: 462px) {
@@ -1444,6 +1450,8 @@ h5 {
 
   .slider-img {
     text-align: left;
+    background-image:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, .1)),url('../images/slide-image.png');
   }
   .slider-container {
     margin-left: 10px;
@@ -1538,6 +1546,10 @@ h5 {
       max-width: 306px;
       justify-content: flex-end;
   }
+  .searchBox {
+    display: block;
+    max-width: 240px;
+  }
   .news-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1597,4 +1609,15 @@ h5 {
 	.hidden-nav a {
 		margin-left: -10px;
 	}
+
+
+
+  .footer-content {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+  }
+  .footer-icon {
+    flex-wrap: nowrap;
+  }
 }
