@@ -130,6 +130,42 @@ button .fa-phone-volume:hover {
 	font-weight: 500;
  }
 
+ .search-mobile{
+    display: inline-flex;
+    flex: 1 1 300px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+    /* border: 1px solid #ccc; */
+    border-right: none;
+    margin-right: 18px;
+  }
+ .search-mobile button {
+    background-color: #e9e9e9;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: 2px solid #ccc;
+    cursor: pointer;
+    
+  border-radius: 5%;
+ }
+ button .fa-magnifying-glass {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+ .search-mobile-box {
+  font-family: 'Poppins', sans-serif;
+	border: 1px solid #d4d4d4;
+	border-right: none;
+	padding: 1em 1em 1em 1em;
+	flex: 1;
+	background-color: #e9e9e9;
+	font-size: .9em;
+	font-weight: 500;
+ }
 
 
 .desktop-nav {
@@ -1218,9 +1254,6 @@ h5 {
     line-height: 1.5em;
 }
 
-
-/* Hello */
-
 .header {
     margin-left: auto;
     margin-right: auto;
@@ -1249,9 +1282,6 @@ h5 {
 }
 
 
-
-/* Goodbye */
-
 @media screen and (min-width: 462px) {
     .footer-icon a {
         padding: 15px 20px;
@@ -1267,6 +1297,14 @@ h5 {
         display: inline-flex;
     }
 }
+@media screen and (max-width: 767px) {
+    .header-buttons {
+        justify-content: right;
+    }
+    .search-bar {
+        display: none;
+    }
+}
 @media screen and (min-width: 768px) {
     .container {
         /* margin-right: 1.5em;
@@ -1279,7 +1317,10 @@ h5 {
     .fa-bars {
       margin-right: 2%;
     }
-   
+   .search-bar {
+    max-width: 243px;
+
+   }
     .search-bar button {
     background-color: #999AA2;
     color: #fff;
@@ -1289,6 +1330,9 @@ h5 {
     .searchBox {
         background-color: #fff;
         max-width: 175px;
+    }
+    .search-mobile {
+        display: none;
     }
     .slider-img h3 {
         margin-top: 30px
@@ -1381,6 +1425,9 @@ h5 {
 	.container {
 		width: 970px;
 	}
+    .search-bar {
+        max-width: 66px;
+    }
   .searchBox {
     display: none;
   }
@@ -1394,6 +1441,25 @@ h5 {
 	.desktop-nav {
 		display: block;
 	}
+
+  .slider-img {
+    text-align: left;
+  }
+  .slider-container {
+    margin-left: 10px;
+  }
+  .slider-btn {
+    margin-top: 0px;
+  }
+  .slider-img h3 {
+    font-size: 4em;
+    padding: 0;
+  }
+  .slider-img p {
+    font-size: 1.625em;
+    margin-left: 0;
+  }
+
   .tab-1 {
     grid-area: tabone;
   }
@@ -1442,11 +1508,81 @@ h5 {
   .name {
     margin-right: 25px;
   }
+  .footer-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 3em;
+  }
+  h5 {
+    font-size: 1em;
+  }
+  .footer-nav ul {
+    margin-bottom: 10px;
+  }
+  .footer-nav li {
+    font-size: .8125em;
+    line-height: 1.8em;
+  }
+  .footer-bottom p {
+    font-size: .8125em;
+  }
 }
 @media screen and (min-width: 1260px) {
 	.container {
 		width: 1210px;
 	}
+  .header-buttons {
+      width: 1100px;
+  }
+  .search-bar {
+      max-width: 306px;
+      justify-content: flex-end;
+  }
+  .news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+  .article-3 {
+    display: block;
+  }
+  .tab-1 {
+    grid-area: tabone;
+  }
+  .tab-2 {
+      grid-area: tabtwo;
+  }
+
+  .tab-3 {
+      grid-area: tabthree;
+  }
+
+  .tab-4 {
+      grid-area: tabfour;
+  }
+
+  .tab-5 {
+      grid-area: tabfive;
+  }
+
+  .tab-6 {
+      grid-area: tabsix;
+  }
+
+  .tab-7 {
+      grid-area: tabseven;
+  }
+  .tab-container {
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-areas: 
+      'tabone tabone tabone tabone tabtwo tabtwo tabtwo tabtwo tabthree tabthree tabthree tabthree'
+      'tabfour tabfour tabfour tabfive tabfive tabfive tabsix tabsix tabsix tabseven tabseven tabseven';
+  }
+
+
+
+
+
 	.work-showcase a:nth-child(-n+12) {
 			display: inline-flex;
 	}
