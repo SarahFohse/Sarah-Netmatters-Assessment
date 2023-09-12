@@ -1,14 +1,15 @@
 .view-work {
   font-size: 1.6em;
   font-weight: 600;
-  color: #333645;
+  color: $blackish;
   text-decoration: none;
   display: block;
   text-align: center;
   margin: 35px 0 0 0;
-}
-.view-work:hover {
-text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+    }
 }
 .service-header {
   position: relative;
@@ -16,7 +17,7 @@ text-decoration: underline;
 .view-hidden {
   font-size: 1.6em;
   font-weight: 600;
-  color: #333645;
+  color: $blackish;
   text-decoration: none;
   display: block;
   text-align: center;
@@ -24,9 +25,10 @@ text-decoration: underline;
   right: 20px;
   top: 10px;
   visibility: hidden;
-}
-.view-hidden:hover {
-text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+    }
 }
 .work-showcase {
   white-space: nowrap;
@@ -42,9 +44,10 @@ text-decoration: underline;
   max-height: 70px;
   cursor: default;
   width: auto!important;
-}
-.work-showcase a:hover {
-  filter: none;
+
+  &:hover {
+    filter: none;
+  }
 }
 .work-showcase a:nth-child(-n+3) {
   display: inline-flex;

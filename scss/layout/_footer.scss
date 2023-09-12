@@ -1,13 +1,14 @@
 footer {
   background-color: $tuna;
   text-align: left;
+
+  img {
+    margin-top: 30px;
+    min-width: 250px;
+    max-width: 320px;
+  }
 }
 
-footer img {
-  margin-top: 30px;
-  min-width: 250px;
-  max-width: 320px;
-}
 .footer-text {
   color: #fff;
   text-transform: uppercase; 
@@ -17,6 +18,24 @@ footer img {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
+
+  a {
+    background-color: $ebony;
+    margin: 5px;
+    padding: 15px 40px;
+  }
+  a:nth-child(1):hover {
+  background-color: $facebook;
+  }
+  a:nth-child(2):hover {
+  background-color: $linkedin;
+  }
+  a:nth-child(3):hover {
+  background-color: $twitter;
+  }
+  a:nth-child(4):hover {
+  background-color: $insta;
+  }
 }
 .fa-brands {
   color: white;
@@ -24,23 +43,6 @@ footer img {
   height: 25px;
   width: 25px;
   text-align: center;
-}
-.footer-icon a {
-  background-color: $ebony;
-  margin: 5px;
-  padding: 15px 40px;
-}
-.footer-icon a:nth-child(1):hover {
-background-color: $facebook;
-}
-.footer-icon a:nth-child(2):hover {
-background-color: $linkedin;
-}
-.footer-icon a:nth-child(3):hover {
-background-color: $twitter;
-}
-.footer-icon a:nth-child(4):hover {
-background-color: $insta;
 }
 h5 {
   color: white;
@@ -75,11 +77,12 @@ h5 {
 .footer-bottom {
   background-color: $ebony;
   height: 80px;
-}
-.footer-bottom p{
-  padding-top: 15px;
-  margin-bottom: 0;
-  color: $white;
-  font-size: .8em;
-  line-height: 1.5em;
+
+  p {
+    padding-top: 15px;
+    margin-bottom: 0;
+    color: $white;
+    font-size: .8em;
+    line-height: 1.5em;
+  }
 }

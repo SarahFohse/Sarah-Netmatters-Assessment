@@ -1,15 +1,16 @@
 .newsletter {
   background-color: $grey;
+
+  h3 {
+    padding: 40px 0 0 0;
+    margin-bottom: 5px;
+    font-size: 2.1em;
+    color: $blackish;
+    font-weight: 400;
+    line-height: 1.4em;
+  }
 }
 
-.newsletter h3 {
-  padding: 40px 0 0 0;
-  margin-bottom: 5px;
-  font-size: 2.1em;
-  color: $blackish;
-  font-weight: 400;
-  line-height: 1.4em;
-}
 .name-email input {
   margin-bottom: 15px;
   padding-left: 15px;
@@ -25,10 +26,11 @@
 }
 .name-email label {
   margin-bottom: -10px;
-}
-.name-email label::after {
-  content: "*";
-  color: $amaranth-dark;
+
+  &::after {
+    content: "*";
+    color: $amaranth-dark;
+  }
 }
 .name-email input,
 .name-email label {
@@ -42,6 +44,17 @@
 .checkbox {
   display: flex;
   cursor: pointer;
+
+  p {
+    color: $blackish;
+    margin-top: 0;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.8em;
+  }
+  a {
+    color: $blackish;
+  }
 }
 
 
@@ -52,39 +65,29 @@ input[type="checkbox"] {
   border: 3px solid $blackish;
   display: flex;
   border-radius: 5px;
-  padding: 14px;
+  padding: 15px;
   margin-right: 20px;
   margin-left: 0px;
   position: relative;
   cursor: pointer;
+
+  &:checked {
+    background-color: $blackish;
+  }
+  &:checked::before {
+    font-family: 'Font Awesome 6 Free';
+    font-size: 1.1rem;
+    font-weight: 900;
+    content: '\f00c';
+    color: $white;
+    margin: auto;
+    position: absolute;
+    left: 7px;
+    top: 7px;
+  }
 }
 
-input[type="checkbox"]:checked {
-  background-color: $blackish;
-}
-input[type="checkbox"]:checked::before {
-  font-family: 'Font Awesome 6 Free';
-  font-size: 1.1rem;
-  font-weight: 900;
-  content: '\f00c';
-  color: $white;
-  margin: auto;
-  position: absolute;
-  left: 7px;
-  top: 7px;
-}
 
-
-.checkbox p {
-  color: $blackish;
-  margin-top: 0;
-  font-size: 1em;
-  font-weight: 600;
-  line-height: 1.8em;
-}
-.checkbox a {
-  color: $blackish;
-}
 .subscribe input{
   background-color: $blackish;
   border: none;
@@ -96,7 +99,8 @@ input[type="checkbox"]:checked::before {
   width: fit-content;
   margin: 20px 0 50px 0;
   cursor: pointer;
-}
-.subscribe input:hover {
-background-color: $blackish-dark;
+
+  &:hover {
+    background-color: $blackish-dark;
+    }
 }

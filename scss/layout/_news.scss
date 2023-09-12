@@ -52,6 +52,11 @@ line-height: 1.7em;
   border-radius: 3px;
   top: 0;
   transition: .5s ease;
+
+  &:hover {
+    top: -10px;
+    transition: .5s ease;
+    }
 }
 .article-container {
   margin: 25px;
@@ -61,12 +66,6 @@ line-height: 1.7em;
 .article-3 a {
   color: $blackish;
   text-decoration: none;
-}
-.article-1:hover,
-.article-2:hover,
-.article-3:hover {
-top: -10px;
-transition: .5s ease;
 }
 .tag-container {
   position: relative;
@@ -149,19 +148,21 @@ hr {
   font-size: .9em;
   font-weight: 600;
   margin-left: 25px;
+
+  img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
 }
 .date {
   font-weight: lighter;
   margin-top: -10px;
 }
 
-.author-info img {
-  width: 50px;
-  height: 50px;
-  margin-right: 15px;
-  margin-bottom: 0;
-  margin-top: 10px;
-}
+.author-info,
 .news-header {
   position: relative;
 }

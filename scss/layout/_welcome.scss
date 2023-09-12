@@ -6,28 +6,29 @@
   font-size: 1.05em;
   font-weight: 300;
   line-height: 2em;
-}
-.welcome h3 {
-  margin-top: 40px;
-  font-size: 1.98em;
-  letter-spacing: 2px;
-  line-height: 1.2em;
-  font-weight: 600;
-}
-.welcome a {
-  text-decoration: none;
-  color: $white;
-}
-.welcome p {
-font-size: 1em;
-margin: 30px 0;
+
+  h3 {
+    margin-top: 40px;
+    font-size: 1.98em;
+    letter-spacing: 2px;
+    line-height: 1.2em;
+    font-weight: 600;
+  }
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+  p {
+    font-size: 1em;
+    margin: 30px 0;
+    }
+    span {
+      font-weight: 600;
+      color: $white;
+    }
 }
 .welcome a:hover {
 text-decoration: underline;
-}
-.welcome span {
-  font-weight: 600;
-  color: $white;
 }
 .quote {
   color: #A3A9AC;
