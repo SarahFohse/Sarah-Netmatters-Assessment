@@ -1,0 +1,37 @@
+.message {
+  position: fixed;
+  right: 1%;
+  bottom: 3%;
+  z-index: 2;
+
+  i {
+    font-size: 2em;
+    color: $white;
+  }
+  button {
+    background-color: $blackish;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+    cursor: pointer;
+  }
+}
+
+.consent {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+
+  button {
+    background-color: $consent;
+    color: $white;
+    border-radius: 0 10px 0 0;
+    font-weight: bold;
+    padding: 4px 13px;
+    border-style: none;
+    cursor: pointer;
+  }
+}
