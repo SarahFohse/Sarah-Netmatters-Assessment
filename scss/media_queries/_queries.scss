@@ -2,6 +2,11 @@
   .footer-icon a {
       padding: 15px 20px;
   }
+
+  footer img {
+    min-width: 250px;
+    max-width: 320px;
+  }
 }
 @media screen and (min-width: 600px) {
   .welcome-link {

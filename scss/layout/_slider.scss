@@ -41,7 +41,9 @@
     text-decoration: none;
   }
 } 
-
+.slider-img a:hover {
+  background-color: $purple-dark;
+}
 
 .slider-btn {
   display: flex;
